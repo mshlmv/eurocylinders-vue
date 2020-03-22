@@ -1,0 +1,10 @@
+$base-font-size: 16;
+$main-color: #3f485d;
+$blue-color: #06163a;
+$green-color: #1eaa37;
+$text-color: $main-color;
+
+@function rem($num) {
+  $rem-size: $num / $base-font-size;
+  @return #{$rem-size}rem;
+}
