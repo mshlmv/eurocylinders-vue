@@ -1,5 +1,44 @@
 <template>
   <Layout>
+    <section class="dilers-list">
+      <div class="container mx-auto">
+        <div class="heading-group text-center mb-8">
+          <h2 class="uppercase">Список дилеров</h2>
+        </div>
+        <div class="grid grid-cols-4 gap-6">
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+          <div>
+            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+            <p class="mb-2">Название дилера</p>
+            <a href="#" class="underline">Адрес сайта</a>
+          </div>
+        </div>    
+      </div>
+    </section>
   </Layout>
 </template>
 
@@ -10,3 +49,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scope>
+.dilers-list {
+  margin-top: 80px;
+  padding: 120px 0;
+}
+a {
+  color: $green-color;
+}
+</style>
