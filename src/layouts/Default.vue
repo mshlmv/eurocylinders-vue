@@ -46,6 +46,7 @@ section.colored {
 
 .btn {
   display: inline-block;
+  font-family: Arial, sans-serif;
   font-weight: 400;
   text-align: center;
   white-space: nowrap;
@@ -77,12 +78,14 @@ section.colored {
   }
 }
 .btn-lg {
-  font-family: Arial, sans-serif;
   font-size: 17px;
   font-weight: 500;
   line-height: 1;
   padding: rem(12) rem(35);
   min-width: 265px;
+}
+.btn-medium {
+  padding: .5rem 1rem;
 }
 .btn-rounded {
   border-radius: rem(30);

@@ -15,82 +15,58 @@
             </div>
             <div class="assortment-text w-1/2">
               <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
+              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis. Depending on the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and specifications.</p>
               <p>The data sheet for our industrial gases products can be found in our download area.</p>
             </div>
           </div>
           <div class="assortment-block flex flex-row">
             <div class="assortment-image overflow-hidden w-1/2">
-              <img class="w-full object-cover" src="media/assortment_1.jpg" alt="">
+              <img class="w-full object-cover" src="media/assortment_2.jpg" alt="">
             </div>
             <div class="assortment-text w-1/2">
-              <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
+              <h3 class="assortment-text__heading">Medical gases and safety equipment</h3>
+              <p>For use in rescue services and hospitals as well as for use as self-contained breathing apparatus (SCBA) to fight fire and chemical accidents we manufacture compact and lightweight high-pressure steel cylinders.</p>
               <p>The data sheet for our industrial gases products can be found in our download area.</p>
             </div>
           </div>
           <div class="assortment-block flex flex-row-reverse">
             <div class="assortment-image overflow-hidden w-1/2">
-              <img class="w-full object-cover" src="media/assortment_1.jpg" alt="">
+              <img class="w-full object-cover" src="media/assortment_3.jpg" alt="">
             </div>
             <div class="assortment-text w-1/2">
-              <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
-              <p>The data sheet for our industrial gases products can be found in our download area.</p>
+              <h3 class="assortment-text__heading">Scuba diving</h3>
+              <p>Especially for the needs of professional and leisure divers we have jointly developed high-pressure steel cylinders, which meet the highest requirements in the underwater world, with our partners from the diving industry.</p>
+              <p>You can find the data sheet of our diving cylinders in the download area.</p>
             </div>
           </div>
           <div class="assortment-block flex flex-row-reverse">
             <div class="assortment-image overflow-hidden w-1/2">
-              <img class="w-full object-cover" src="media/assortment_1.jpg" alt="">
+              <img class="w-full object-cover" src="media/assortment_4.jpg" alt="">
             </div>
             <div class="assortment-text w-1/2">
-              <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
-              <p>The data sheet for our industrial gases products can be found in our download area.</p>
+              <h3 class="assortment-text__heading">Food and beverage industry</h3>
+              <p>Gases used in the food and beverage industry for example help to preserve food or make your soft drink bubble. Our high-pressure steel cylinders do also fit in most commonly used dispensing systems.</p>
+              <p>The data sheet for our products for the food and beverage industry can be found in our download area.</p>
             </div>
           </div>
           <div class="assortment-block flex flex-row">
             <div class="assortment-image overflow-hidden w-1/2">
-              <img class="w-full object-cover" src="media/assortment_1.jpg" alt="">
+              <img class="w-full object-cover" src="media/assortment_5.jpg" alt="">
             </div>
             <div class="assortment-text w-1/2">
-              <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
-              <p>The data sheet for our industrial gases products can be found in our download area.</p>
+              <h3 class="assortment-text__heading">Fire protection</h3>
+              <p>Our high-pressure steel cylinders are used in state-of-the-art fire protection systems for stationary and mobile use. Together with our partners from this industry we develop customized solutions for the respective application.</p>
+              <p>The data sheet for our products for fire protection systems can be found in our download area.</p>
             </div>
           </div>
           <div class="assortment-block flex flex-row">
             <div class="assortment-image overflow-hidden w-1/2">
-              <img class="w-full object-cover" src="media/assortment_1.jpg" alt="">
+              <img class="w-full object-cover" src="media/assortment_6.jpg" alt="">
             </div>
             <div class="assortment-text w-1/2">
-              <h3 class="assortment-text__heading">Industrial gases</h3>
-              <p>Industrial and specialty gases are used in just about every sector of industry on a daily basis.
-                Depending
-                on
-                the gas and application, we produce a wide range of high-pressure steel cylinders in various sizes and
-                specifications.</p>
-              <p>The data sheet for our industrial gases products can be found in our download area.</p>
+              <h3 class="assortment-text__heading">Others</h3>
+              <p>Thanks to our experienced staff and our broad know-how, we are able to develop and produce high-pressure steel cylinder also for your special application. Whether aerospace, Formula 1, sports or leisure, we offer customized solutions for your application in the field of gas storage and transportation.</p>
+              <p>Please contact our sales agents.</p>
             </div>
           </div>
         </div>
@@ -208,9 +184,6 @@ export default {
 </script>
 
 <style lang="scss">
-.assortment-image {
-  max-height: 320px;
-}
 .assortment-text {
   padding: rem(30);
 
