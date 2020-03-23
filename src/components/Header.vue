@@ -10,6 +10,7 @@
           <a href="/#assortment" class="nav-item">Предложения</a>
           <a href="/#quality" class="nav-item">Стандарты</a>
           <g-link to="/production/" class="nav-item" active-class="is-active">Производство</g-link>
+          <g-link to="/goods/" class="nav-item" active-class="is-active">Продукция</g-link>
           <g-link to="/dilers/" class="nav-item" active-class="is-active">Дилеры</g-link>
           <g-link to="/contacts/" class="nav-item" active-class="is-active">Контакты</g-link>
           <a href="https://eurocylinders.com/" target="_blank" class="ex-link">EN</a>
