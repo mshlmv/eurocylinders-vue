@@ -9,6 +9,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "gridsome": "^0.7.0",
+    "gridsome-plugin-modal": "^0.1.1",
     "vue-carousel": "^0.18.0",
     "vue-yandex-maps": "^0.10.6"
   },

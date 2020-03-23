@@ -17,9 +17,14 @@ function addStyleResource (rule) {
 
 module.exports = {
   siteName: 'eurocylinder systems AG',
-  plugins: [{
-    use: 'gridsome-plugin-tailwindcss'
-  }],
+  plugins: [
+    {
+      use: 'gridsome-plugin-tailwindcss'
+    },
+    {
+      use: 'gridsome-plugin-modal'
+    }
+  ],
   chainWebpack (config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']

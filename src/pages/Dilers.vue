@@ -6,36 +6,13 @@
           <h2 class="uppercase">Список дилеров</h2>
         </div>
         <div class="grid grid-cols-4 gap-6">
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
-          <div>
-            <img src="https://via.placeholder.com/150" alt="" class="mb-4">
-            <p class="mb-2">Название дилера</p>
-            <a href="#" class="underline">Адрес сайта</a>
-          </div>
+          <template v-for="i in 6">
+            <div>
+              <img src="https://via.placeholder.com/150" alt="" class="mb-4">
+              <p class="mb-2">Название дилера</p>
+              <a href="#" class="underline">Адрес сайта</a>
+            </div>
+          </template>
         </div>    
       </div>
     </section>
@@ -50,7 +27,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scope>
+<style lang="scss" scoped>
 .dilers-list {
   margin-top: 80px;
   padding: 120px 0;

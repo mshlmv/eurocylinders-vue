@@ -8,3 +8,7 @@ $text-color: $main-color;
   $rem-size: $num / $base-font-size;
   @return #{$rem-size}rem;
 }
+
+.v--modal {
+  padding: 20px !important;
+}
