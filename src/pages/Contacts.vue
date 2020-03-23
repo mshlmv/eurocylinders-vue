@@ -119,6 +119,7 @@ export default {
 <style lang="scss">
 .ymap-container {
   height: 480px;
+  margin-top: 80px;
 }
 .contact-title {
   color: $blue-color;
