@@ -5,7 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 const path = require('path')
 
-function addStyleResource (rule) {
+function addStyleResource(rule) {
   rule.use('style-resource')
     .loader('style-resources-loader')
     .options({
@@ -19,17 +19,20 @@ module.exports = {
   siteName: 'eurocylinder systems AG',
   plugins: [
     {
-      use: 'gridsome-plugin-tailwindcss'
+      use: 'gridsome-plugin-tailwindcss',
+      options: {
+        shouldPurge: false
+      }
     },
     {
       use: 'gridsome-plugin-modal'
     }
   ],
-  chainWebpack (config) {
+  chainWebpack(config) {
     // Load variables for all vue-files
     const types = ['vue-modules', 'vue', 'normal-modules', 'normal']
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-	}
+  }
 }

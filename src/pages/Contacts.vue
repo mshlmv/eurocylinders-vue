@@ -1,27 +1,48 @@
 <template>
   <Layout>
-    <yandex-map :coords="coords" :zoom="18">
-      <ymap-marker :coords="coords" marker-id="1"/>
-    </yandex-map>
+    <ClientOnly>
+      <yandex-map :coords="coords" :zoom="18">
+        <ymap-marker :coords="coords" marker-id="1" />
+      </yandex-map>
+    </ClientOnly>
     <section class="grid grid-cols-2 grid-gap-4 my-12">
       <div class="px-32">
-        <h2 class="contact-title mb-8">Rufen Sie uns an<br> <strong>oder senden Sie uns eine Mail.</strong></h2>
+        <h2 class="contact-title mb-8">
+          Rufen Sie uns an
+          <br />
+          <strong>oder senden Sie uns eine Mail.</strong>
+        </h2>
         <div class="contact-block">
-          <g-image src="~/assets/img/phone.svg" alt="phone icon" width="40" class="contact-block__image"/>
+          <g-image
+            src="~/assets/img/phone.svg"
+            alt="phone icon"
+            width="40"
+            class="contact-block__image"
+          />
           <div>
             <div class="heading-text">+49 36 44 - 62 10</div>
             <div>Zögern Sie nicht uns anzurufen!</div>
           </div>
         </div>
         <div class="contact-block">
-          <g-image src="~/assets/img/clock.svg" alt="clock icon" width="40" class="contact-block__image"/>
+          <g-image
+            src="~/assets/img/clock.svg"
+            alt="clock icon"
+            width="40"
+            class="contact-block__image"
+          />
           <div>
             <div class="heading-text">Öffnungszeiten</div>
             <div>Montag - Freitag: 7:00 - 16:00</div>
           </div>
         </div>
         <div class="contact-block">
-          <g-image src="~/assets/img/marker.svg" alt="marker icon" width="40" class="contact-block__image"/>
+          <g-image
+            src="~/assets/img/marker.svg"
+            alt="marker icon"
+            width="40"
+            class="contact-block__image"
+          />
           <div>
             <div class="heading-text">Firmensitz</div>
             <div>Auenstraße 21, 99510 Apolda</div>
@@ -32,18 +53,42 @@
         <form @submit="onSubmit">
           <div class="form-row">
             <div class="form-group">
-              <input v-model="contact.fname" name="fname" type="text" placeholder="Name" class="form-control">
+              <input
+                v-model="contact.fname"
+                name="fname"
+                type="text"
+                placeholder="Name"
+                class="form-control"
+              />
             </div>
             <div class="form-group">
-              <input v-model="contact.lname" name="lname" type="text" placeholder="Unternehmen" class="form-control">
+              <input
+                v-model="contact.lname"
+                name="lname"
+                type="text"
+                placeholder="Unternehmen"
+                class="form-control"
+              />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <input v-model="contact.email" name="email" type="text" placeholder="E-Mail" class="form-control">
+              <input
+                v-model="contact.email"
+                name="email"
+                type="text"
+                placeholder="E-Mail"
+                class="form-control"
+              />
             </div>
             <div class="form-group">
-              <input v-model="contact.telefon" name="telefon" type="text" placeholder="Telefon" class="form-control">
+              <input
+                v-model="contact.telefon"
+                name="telefon"
+                type="text"
+                placeholder="Telefon"
+                class="form-control"
+              />
             </div>
           </div>
           <div class="form-row">
@@ -63,35 +108,37 @@
 </template>
 
 <script>
-import { yandexMap, ymapMarker } from 'vue-yandex-maps'
-import axios from 'axios'
+import axios from "axios";
 
 export default {
   metaInfo: {
-    title: 'Контакты'
+    title: "Контакты"
   },
   components: {
-    yandexMap,
-    ymapMarker
+    yandexMap: () =>
+      import("vue-yandex-maps")
+        .then(m => m.yandexMap)
+        .catch(),
+    ymapMarker: () =>
+      import("vue-yandex-maps")
+        .then(m => m.ymapMarker)
+        .catch()
   },
   data: () => ({
-    coords: [
-      51.033133,
-      11.519483
-    ],
+    coords: [51.033133, 11.519483],
     contact: {
-      fname: '',
-      lname: '',
-      email: '',
-      telefon: '',
-      message: ''
+      fname: "",
+      lname: "",
+      email: "",
+      telefon: "",
+      message: ""
     },
     isSending: false
   }),
   methods: {
     clearForm() {
       for (let field in this.contact) {
-        this.contact[field] = ''
+        this.contact[field] = "";
       }
     },
     onSubmit(event) {
@@ -103,17 +150,20 @@ export default {
         for (let field in this.contact) {
           form.append(field, this.contact[field]);
         }
-        axios.post('/post.php', form).then((response) => {
-          console.log(response);
-          this.clearForm();
-          this.isSending = false;
-        }).catch((e) => {
-          console.log(e);
-        });
+        axios
+          .post("/post.php", form)
+          .then(response => {
+            console.log(response);
+            this.clearForm();
+            this.isSending = false;
+          })
+          .catch(e => {
+            console.log(e);
+          });
       }, 1000);
     }
   }
-}
+};
 </script>
 
 <style lang="scss">
@@ -125,7 +175,7 @@ export default {
   color: $blue-color;
   font-size: rem(48);
   line-height: 1.1;
-  
+
   strong {
     font-weight: 700;
   }
@@ -152,14 +202,14 @@ export default {
 .form-control {
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
   color: #495057;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: .25rem;
-  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 </style>

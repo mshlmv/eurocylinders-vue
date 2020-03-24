@@ -15,10 +15,10 @@
             <p>4. During quenching and tempering the required material properties are set.</p>
           </div>
           <div>
-            <g-image src="/media/produktion1.jpg" alt="produktion1"/>
+            <g-image src="/media/produktion1.jpg" alt="produktion1" />
           </div>
           <div>
-            <g-image src="/media/produktion2.jpg" alt="produktion2"/>
+            <g-image src="/media/produktion2.jpg" alt="produktion2" />
           </div>
           <div class="text text-lg">
             <p>5. The machining of the neck is performed on CNC controlled machining centers.</p>
@@ -32,10 +32,10 @@
             <p>11. Environmentally friendly powder coat or water varnish I used for surface coating.</p>
           </div>
           <div>
-            <g-image src="/media/produktion3.jpg" alt="produktion3"/>
+            <g-image src="/media/produktion3.jpg" alt="produktion3" />
           </div>
           <div>
-            <g-image src="/media/produktion4.jpg" alt="produktion4"/>
+            <g-image src="/media/produktion4.jpg" alt="produktion4" />
           </div>
           <div class="text text-lg">
             <p>12. Upon customer’s request the cylinders can be completely assembled, including valve and valve protection.</p>
@@ -50,9 +50,9 @@
 <script>
 export default {
   metaInfo: {
-    title: 'Производство'
+    title: "Производство"
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
