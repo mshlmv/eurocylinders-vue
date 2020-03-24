@@ -7,34 +7,30 @@
         </div>
         <div class="grid grid-cols-3 gap-6">
           <template v-for="i in 10">
-            <div>
-              <img src="https://via.placeholder.com/300" alt="" class="mb-4">
+            <div :key="i">
+              <img src="https://via.placeholder.com/300" alt class="mb-4" />
               <p class="mb-2">Название продукта</p>
               <button v-on:click="show" class="btn btn-success">Подробнее</button>
             </div>
           </template>
-
         </div>
       </div>
     </section>
-    <modal name="hello-world">
-      Характеристики товара
-    </modal>
+    <modal name="hello-world">Характеристики товара</modal>
   </Layout>
-
 </template>
 
 <script>
 export default {
   metaInfo: {
-    title: 'Продукция'
+    title: "Продукция"
   },
   methods: {
     show() {
-      this.$modal.show('hello-world')
+      this.$modal.show("hello-world");
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>

@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "image": "https://via.placeholder.com/300",
+      "title": "Название продукта 1",
+      "category": "category_1"
+    },
+    {
+      "id": 2,
+      "image": "https://via.placeholder.com/300",
+      "title": "Название продукта 2",
+      "category": "category_2"
+    },
+    {
+      "id": 3,
+      "image": "https://via.placeholder.com/300",
+      "title": "Название продукта 3",
+      "category": "category_3"
+    },
+    {
+      "id": 4,
+      "image": "https://via.placeholder.com/300",
+      "title": "Название продукта 4",
+      "category": "category_1"
+    }
+  ]
+}

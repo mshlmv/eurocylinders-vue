@@ -1,26 +1,26 @@
 <template>
-<div class="layout">
-  <Header/>
-  <slot/>
-  <Footer/>
-</div>
+  <div class="layout">
+    <Header />
+    <slot />
+    <Footer />
+  </div>
 </template>
 
 <script>
-import Header from '~/components/Header.vue'
-import Footer from '~/components/Footer.vue'
+import Header from "~/components/Header.vue";
+import Footer from "~/components/Footer.vue";
 
 export default {
   components: {
     Header,
     Footer
   }
-}
+};
 </script>
 
 <style lang="scss">
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
@@ -53,28 +53,29 @@ section.colored {
   vertical-align: middle;
   user-select: none;
   border: 1px solid transparent;
-  padding: .375rem .75rem;
+  padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  transition: color .15s ease-in-out, background-color .15s ease-in-out,
-  border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:not(:disabled):not(.disabled) {
     cursor: pointer;
-  } 
+  }
 }
 .btn-success {
   color: #fff;
   background-color: $green-color;
   border-color: $green-color;
 
-  &:hover, &:active {
+  &:hover,
+  &:active {
     background-color: darken($green-color, 5);
     border-color: darken($green-color, 5);
   }
   &:focus {
     outline: none;
-    box-shadow: 0 0 0 0.2rem rgba($green-color,.5);
+    box-shadow: 0 0 0 0.2rem rgba($green-color, 0.5);
   }
 }
 .btn-lg {
@@ -85,9 +86,13 @@ section.colored {
   min-width: 265px;
 }
 .btn-medium {
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 .btn-rounded {
   border-radius: rem(30);
+}
+
+.v--modal {
+  padding: 20px !important;
 }
 </style>
